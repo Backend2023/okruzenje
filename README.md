@@ -21,7 +21,12 @@ Algebra radno okruznje u PHP-u
 ![settings guest](vbox_06_devices_guest_addition.png)
 
 - IP adresa virtualnog stroja:
-```
+``` 
 hostname -I
-192.168.199.118 
+```
+Vraća npr. : 192.168.199.118
+
+- Pokrećemo stranice sa:
+```
+http://192.168.199.118:82/prve_stranice.php
 ```
