@@ -85,6 +85,8 @@ algebra@ubuntu22:/var/www/druga$
 - 
 ![novi share](vbox_07_shared_new_directory.png)
 
+**Postaviti korisnika algebra i www-data u grupu vboxsf**
+
 ```
 algebra@ubuntu22:/var/www/druga$ sudo adduser www-data vboxsf
 algebra@ubuntu22:/var/www/druga$ sudo usermod -a -G vboxsf www-data 
