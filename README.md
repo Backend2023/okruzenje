@@ -64,7 +64,22 @@ algebra@ubuntu22:/etc/apache2/sites-available$ `systemctl reload apache2`
 
 algebra@ubuntu22:/etc/apache2/sites-available$ `systemctl restart apache2`
 
+**Izgled sheranog foldera "druga"**
+```
+algebra@ubuntu22:/var/www/druga$ ls -la
 
+total 10
+drwxrwx--- 1 root vboxsf 4096 Dec  5 11:16 .
+drwxr-xr-x 5 root root   4096 Dec  4 23:20 ..
+-rwxrwx--- 1 root vboxsf  242 Dec  5 11:00 druga.conf
+-rwxrwx--- 1 root vboxsf   17 Dec  4 20:03 phpinfo.php
+-rwxrwx--- 1 root vboxsf  330 Dec  4 19:59 ports.conf
+-rwxrwx--- 1 root vboxsf    7 Dec  4 21:16 prve_stranice.php
+drwxrwx--- 1 root vboxsf    0 Dec  4 22:42 t2
+drwxrwx--- 1 root vboxsf    0 Dec  4 23:29 t3
+drwxrwx--- 1 root vboxsf    0 Dec  5 10:42 t4
+algebra@ubuntu22:/var/www/druga$ 
+```
 
 
 
