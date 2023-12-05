@@ -19,3 +19,9 @@ Algebra radno okruznje u PHP-u
 ![settings shared](vbox_04_settings_shared.png)
 ![settings interface](vbox_05_settings_interface.png)
 ![settings guest](vbox_06_devices_guest_addition.png)
+
+- IP adresa virtualnog stroja:
+```
+hostname -I
+192.168.199.118 
+```
