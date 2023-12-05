@@ -10,7 +10,7 @@ Algebra radno okruznje u PHP-u
 
 ## Virtualbox
 - Instalirati
-'  > new > type "linux", version "Ubuntu 22" > next > memory "4096", processors "2" '
+`  > new > type "linux", version "Ubuntu 22" > next > memory "4096", processors "2" `
 
 ### Postavke:
 ![Settings general](vbox_01_settings_general.png)
