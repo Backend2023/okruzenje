@@ -1,26 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2023-11-30T17:16:07.044Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="fgJZX-rm7FzcJctmNWQy" version="22.1.5" type="device">
+<mxfile host="app.diagrams.net" modified="2023-11-30T20:51:24.992Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="IGQw1-7TV99x5HlRtW9_" version="22.1.5" type="github">
   <diagram name="Page-1" id="JpstpL33QK8o6swuQbvM">
     <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="RxILEF_6S8VTc1DYghAk-1" value="host racunalo" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="RxILEF_6S8VTc1DYghAk-1" value="host racunalo" style="whiteSpace=wrap;html=1;aspect=fixed;align=right;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="290" y="270" width="430" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="RxILEF_6S8VTc1DYghAk-2" value="VirtualBox" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="350" y="260" width="220" height="220" as="geometry" />
+        <mxCell id="RxILEF_6S8VTc1DYghAk-2" value="VirtualBox" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=right;" parent="1" vertex="1">
+          <mxGeometry x="300" y="332" width="328" height="328" as="geometry" />
         </mxCell>
-        <mxCell id="RxILEF_6S8VTc1DYghAk-3" value="Ubuntu 22" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="373" y="220" width="150" height="80" as="geometry" />
+        <mxCell id="RxILEF_6S8VTc1DYghAk-3" value="Ubuntu 22" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="340" y="400" width="210" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="RxILEF_6S8VTc1DYghAk-4" value="Apache webserver" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="260" width="70" height="50" as="geometry" />
+        <mxCell id="RxILEF_6S8VTc1DYghAk-4" value="Apache webserver" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="420" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="RxILEF_6S8VTc1DYghAk-5" value="Mysqlserver" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="328" y="280" width="120" height="80" as="geometry" />
+        <mxCell id="RxILEF_6S8VTc1DYghAk-5" value="Mysqlserver" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="510" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="RxILEF_6S8VTc1DYghAk-6" value="&lt;span class=&quot;chatIndividualMessageContent--ZoTO-kllP1-hUR76ZCyod&quot; style=&quot;width: 100%; height: fit-content; font-size: 0.75rem; word-break: break-word; color: rgb(75, 75, 75); overflow-wrap: break-word; font-family: adobe-clean, &amp;quot;Source Sans Pro&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font color=&quot;#0000FF&quot;&gt;&lt;u&gt;&lt;a role=&quot;link&quot; tabindex=&quot;2488&quot; href=&quot;https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent;&quot;&gt;https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(75, 75, 75); font-family: adobe-clean, &amp;quot;Source Sans Pro&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(234, 234, 234); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="RxILEF_6S8VTc1DYghAk-6" value="&lt;span class=&quot;chatIndividualMessageContent--ZoTO-kllP1-hUR76ZCyod&quot; style=&quot;width: 100%; height: fit-content; font-size: 0.75rem; word-break: break-word; color: rgb(75, 75, 75); overflow-wrap: break-word; font-family: adobe-clean, &amp;quot;Source Sans Pro&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font color=&quot;#0000FF&quot;&gt;&lt;u&gt;&lt;a role=&quot;link&quot; tabindex=&quot;2488&quot; href=&quot;https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent;&quot;&gt;https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(75, 75, 75); font-family: adobe-clean, &amp;quot;Source Sans Pro&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(234, 234, 234); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="80" width="560" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4lfGYGA37IDK_WV-Lsfp-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4lfGYGA37IDK_WV-Lsfp-1" target="RxILEF_6S8VTc1DYghAk-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4lfGYGA37IDK_WV-Lsfp-1" value="U:algebra&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;P:123&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
