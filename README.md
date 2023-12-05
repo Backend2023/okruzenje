@@ -43,7 +43,6 @@ sudo touch druga.conf
 
 algebra@ubuntu22:/etc/apache2/sites-available$` cat druga.conf`
 ```
-Listen 82
 <VirtualHost *:82>
     ServerAdmin webmaster@localhost
     ServerName druga
@@ -53,6 +52,16 @@ Listen 82
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+omogućiti virtualhost "druga"
+algebra@ubuntu22:/etc/apache2/sites-available$ `sudo a2ensite druga.conf`
+učitiati novu konfiguraciju:
+algebra@ubuntu22:/etc/apache2/sites-available$ `systemctl reload apache2`
+restartirati apache (ukoliko je potrebno)
+algebra@ubuntu22:/etc/apache2/sites-available$ `systemctl restart apache2`
+
+
+
+
 
 
 
