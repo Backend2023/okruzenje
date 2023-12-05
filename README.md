@@ -53,10 +53,15 @@ algebra@ubuntu22:/etc/apache2/sites-available$` cat druga.conf`
 </VirtualHost>
 ```
 omogućiti virtualhost "druga"
+
 algebra@ubuntu22:/etc/apache2/sites-available$ `sudo a2ensite druga.conf`
+
 učitiati novu konfiguraciju:
+
 algebra@ubuntu22:/etc/apache2/sites-available$ `systemctl reload apache2`
+
 restartirati apache (ukoliko je potrebno)
+
 algebra@ubuntu22:/etc/apache2/sites-available$ `systemctl restart apache2`
 
 
