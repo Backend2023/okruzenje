@@ -6,6 +6,7 @@ Algebra radno okruznje u PHP-u
 - [git](https://git-scm.com/download/win)
 - [VS Code](https://code.visualstudio.com/docs/setup/windows)
 - [Apache on Ubuntu22](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04)
+- [Install php8.1 on Ubuntu22](https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04)
 
 
 ## Virtualbox
@@ -71,14 +72,26 @@ algebra@ubuntu22:/var/www/druga$ ls -la
 total 10
 drwxrwx--- 1 root vboxsf 4096 Dec  5 11:16 .
 drwxr-xr-x 5 root root   4096 Dec  4 23:20 ..
--rwxrwx--- 1 root vboxsf  242 Dec  5 11:00 druga.conf
 -rwxrwx--- 1 root vboxsf   17 Dec  4 20:03 phpinfo.php
--rwxrwx--- 1 root vboxsf  330 Dec  4 19:59 ports.conf
 -rwxrwx--- 1 root vboxsf    7 Dec  4 21:16 prve_stranice.php
 drwxrwx--- 1 root vboxsf    0 Dec  4 22:42 t2
 drwxrwx--- 1 root vboxsf    0 Dec  4 23:29 t3
 drwxrwx--- 1 root vboxsf    0 Dec  5 10:42 t4
 algebra@ubuntu22:/var/www/druga$ 
+```
+---
+
+#sheranje direktorija u vboxu
+- 
+![novi share](vbox_07_shared_new_directory.png)
+
+```
+algebra@ubuntu22:/var/www/druga$ sudo adduser www-data vboxsf
+algebra@ubuntu22:/var/www/druga$ sudo usermod -a -G vboxsf www-data 
+algebra@ubuntu22:/var/www/druga$ sudo adduser $USER vboxsf
+
+algebra@ubuntu22:/var/www/druga$ cat /etc/group | grep vboxsf
+vboxsf:x:999:algebra,www-data
 ```
 
 
