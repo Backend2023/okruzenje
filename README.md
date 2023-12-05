@@ -85,6 +85,14 @@ algebra@ubuntu22:/var/www/druga$
 - 
 ![novi share](vbox_07_shared_new_directory.png)
 
+**Instalirati guest aditions**
+```
+algebra@ubuntu22:/media/algebra/VBox_GAs_7.0.12$ pwd
+/media/algebra/VBox_GAs_7.0.12
+
+algebra@ubuntu22:/media/algebra/VBox_GAs_7.0.12$ ./autorun.sh
+```
+
 **Postaviti korisnika algebra i www-data u grupu vboxsf**
 
 ```
