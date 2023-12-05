@@ -30,3 +30,29 @@ Vraća npr. : 192.168.199.118
 ```
 http://192.168.199.118:82/prve_stranice.php
 ```
+
+Namjestiti port u /etc/apache2/ports.conf
+```
+Listen 82
+```
+
+Kreirati novi virtual host u: /etc/apache2/sites-available
+```
+sudo touch druga.conf
+```
+
+algebra@ubuntu22:/etc/apache2/sites-available$` cat druga.conf`
+```
+Listen 82
+<VirtualHost *:82>
+    ServerAdmin webmaster@localhost
+    ServerName druga
+    ServerAlias www.druga
+    DocumentRoot /var/www/druga
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+
+
