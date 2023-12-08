@@ -103,6 +103,25 @@ algebra@ubuntu22:/var/www/druga$ sudo adduser $USER vboxsf
 algebra@ubuntu22:/var/www/druga$ cat /etc/group | grep vboxsf
 vboxsf:x:999:algebra,www-data
 ```
+#Postavke XAMPP
+Kako dodati vanjski direktorij za hostanje na XAMPP
+**C:\xampp\apache\conf\extra\httpd-vhosts.conf**
+```
+Listen 82
+<VirtualHost prva.test:82>
+    ##ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "C:/code/primjer_git"
+    ServerName primjer
+    ErrorLog "logs/primjer_git.log"
+    CustomLog "logs/primjer_git.log" common
+    <Directory "C:/code/primjer_git">
+        AllowOverride All
+        Options Indexes FollowSymLinks
+        Require all granted 
+    </Directory>
+</VirtualHost>
+```
+
 
 
 
