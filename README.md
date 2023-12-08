@@ -107,6 +107,19 @@ vboxsf:x:999:algebra,www-data
 Kako dodati vanjski direktorij za hostanje na XAMPP
 **C:\xampp\apache\conf\extra\httpd-vhosts.conf**
 ```
+Listen 81
+<VirtualHost *:81>
+    ##ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "C:/xampp/htdocs/prva"
+    ServerName prva
+    ErrorLog "logs/prva.log"
+    CustomLog "logs/prva.log" common
+</VirtualHost>
+```
+
+
+**IP-based virtual hosting**
+```
 Listen 82
 <VirtualHost prva.test:82>
     ##ServerAdmin webmaster@dummy-host2.example.com
@@ -122,6 +135,22 @@ Listen 82
 </VirtualHost>
 ```
 
+**Name-based Virtual Hosting**
+```
+NameVirtualHost 127.0.0.3
+<VirtualHost 127.0.0.3>
+    ##ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "C:/code/primjer_git"
+    ServerName prva3.test
+    ErrorLog "logs/primjer_git.log"
+    CustomLog "logs/primjer_git.log" common
+    <Directory "C:/code/primjer_git">
+AllowOverride All
+        Options Indexes FollowSymLinks
+        Require all granted 
+    </Directory>
+</VirtualHost>
+```
 
 
 
