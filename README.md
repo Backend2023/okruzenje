@@ -103,8 +103,10 @@ algebra@ubuntu22:/var/www/druga$ sudo adduser $USER vboxsf
 algebra@ubuntu22:/var/www/druga$ cat /etc/group | grep vboxsf
 vboxsf:x:999:algebra,www-data
 ```
-#Postavke XAMPP
+# Postavke XAMPP
+
 Kako dodati vanjski direktorij za hostanje na XAMPP
+
 **C:\xampp\apache\conf\extra\httpd-vhosts.conf**
 ```
 Listen 81
