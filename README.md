@@ -191,3 +191,187 @@ Izmjeniti donja dva reda
 bind-address            = 0.0.0.0
 ```
 
+# Composer instalacija ubuntu22
+**windows**
+[https://getcomposer.org/download/](https://getcomposer.org/download/)
+
+**Ubuntu22**
+[https://www.digitalocean.com/community/tutorial(s/how-to-install-and-use-composer-on-ubuntu-22-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-22-04)
+
+
+
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ `php -v`
+
+PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+
+Copyright (c) The PHP Group
+
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+
+    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
+
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ `composer -v`
+
+Command 'composer' not found, but can be installed with:
+
+sudo apt install composer
+
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ `sudo apt install php-cli unzip`
+
+[sudo] password for algebra: 
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+unzip is already the newest version (6.0-26ubuntu3.1).
+
+unzip set to manually installed.
+
+The following NEW packages will be installed:
+
+  php-cli
+
+0 upgraded, 1 newly installed, 0 to remove and 35 not upgraded.
+
+Need to get 3,234 B of archives.
+
+After this operation, 25.6 kB of additional disk space will be used.
+
+Do you want to continue? [Y/n] Y
+
+Get:1 http://hr.archive.ubuntu.com/ubuntu jammy/main amd64 php-cli all 2:8.1+92ubuntu1 [3,234 B]
+
+Fetched 3,234 B in 0s (19.7 kB/s)
+
+Selecting previously unselected package php-cli.
+
+(Reading database ... 208479 files and directories currently installed.)
+
+Preparing to unpack .../php-cli_2%3a8.1+92ubuntu1_all.deb ...
+
+Unpacking php-cli (2:8.1+92ubuntu1) ...
+
+Setting up php-cli (2:8.1+92ubuntu1) ...
+
+update-alternatives: using /usr/bin/php.default to provide /usr/bin/php (php) in auto mode
+
+update-alternatives: using /usr/bin/phar.default to provide /usr/bin/phar (phar) in auto mode
+
+update-alternatives: using /usr/bin/phar.phar.default to provide /usr/bin/phar.phar (phar.phar) in auto mode
+
+Processing triggers for man-db (2.10.2-1) ...
+
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ `cd ~`
+
+`curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php`
+
+Command 'curl' not found, but can be installed with:
+
+sudo snap install curl  # version 8.1.2, or
+
+sudo apt  install curl  # version 7.81.0-1ubuntu1.14
+
+See 'snap info curl' for additional versions.
+
+algebra@ubuntu22:~$ `sudo apt  install curl  # version 7.81.0-1ubuntu1.14`
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+The following additional packages will be installed:
+
+  libcurl4
+
+The following NEW packages will be installed:
+
+  curl
+
+The following packages will be upgraded:
+
+  libcurl4
+
+1 upgraded, 1 newly installed, 0 to remove and 34 not upgraded.
+
+Need to get 483 kB of archives.
+
+After this operation, 454 kB of additional disk space will be used.
+
+Do you want to continue? [Y/n]` y`
+
+Get:1 http://hr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.15 [289 kB]
+
+Get:2 http://hr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.15 [194 kB]
+
+Fetched 483 kB in 0s (1,152 kB/s)
+
+(Reading database ... 208488 files and directories currently installed.)
+
+Preparing to unpack .../libcurl4_7.81.0-1ubuntu1.15_amd64.deb ...
+
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.15) over (7.81.0-1ubuntu1.14) ...
+
+Selecting previously unselected package curl.
+
+Preparing to unpack .../curl_7.81.0-1ubuntu1.15_amd64.deb ...
+
+Unpacking curl (7.81.0-1ubuntu1.15) ...
+
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.15) ...
+
+Setting up curl (7.81.0-1ubuntu1.15) ...
+
+Processing triggers for man-db (2.10.2-1) ...
+
+Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+
+algebra@ubuntu22:~$ `curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php`
+
+```
+algebra@ubuntu22:~$ HASH=`curl -sS https://composer.github.io/installer.sig`
+```
+
+algebra@ubuntu22:~$ `echo $HASH`
+
+e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02
+
+algebra@ubuntu22:~$ `php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
+
+Installer verified
+
+algebra@ubuntu22:~$ `sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer`
+
+All settings correct for using Composer
+
+Downloading...
+
+
+
+Composer (version 2.6.6) successfully installed to: /usr/local/bin/composer
+
+**Use it: php /usr/local/bin/composer**
+
+
+
+algebra@ubuntu22:~$ `composer`
+
+   ______
+
+  / ____/___  ____ ___  ____  ____  ________  _____
+
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+
+                    /_/
+
+
+
+
