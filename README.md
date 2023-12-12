@@ -180,7 +180,7 @@ SHOW GRANTS FOR 'mojroot'@'%';
 algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ pwd
 
 /etc/mysql/mariadb.conf.d
-algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ sudo nano 50-server.cn
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ sudo nano 50-server.cnf
 
 Izmjeniti donja dva reda
 #bind-address            = 127.0.0.1
