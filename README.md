@@ -156,5 +156,34 @@ AllowOverride All
 
 
 
+# Postavke mariadb na ubuntu
+**Instalacija**
+https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-22-04
 
+```
+CREATE USER 'mojroot'@'%' IDENTIFIED BY '123';
+```
+
+```
+GRANT EXECUTE, PROCESS, SELECT, SHOW DATABASES, SHOW VIEW, ALTER, ALTER ROUTINE, CREATE, CREATE ROUTINE, CREATE TABLESPACE, CREATE TEMPORARY TABLES, CREATE VIEW, DELETE, DROP, EVENT, INDEX, INSERT, REFERENCES, TRIGGER, UPDATE, CREATE USER, FILE, LOCK TABLES, RELOAD, REPLICATION CLIENT, REPLICATION SLAVE, SHUTDOWN, SUPER  ON *.* TO 'mojroot'@'%' WITH GRANT OPTION;
+```
+
+```
+FLUSH PRIVILEGES;
+```
+
+```
+SHOW GRANTS FOR 'mojroot'@'%';
+```
+
+```
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ pwd
+
+/etc/mysql/mariadb.conf.d
+algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ sudo nano 50-server.cn
+
+Izmjeniti donja dva reda
+#bind-address            = 127.0.0.1
+bind-address            = 0.0.0.0
+```
 
