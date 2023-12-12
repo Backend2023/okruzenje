@@ -160,6 +160,8 @@ AllowOverride All
 **Instalacija**
 https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-22-04
 
+
+**KREIRAJ KORISNIKA KOJI NIJE LOCALHOST!!!**
 ```
 CREATE USER 'mojroot'@'%' IDENTIFIED BY '123';
 ```
@@ -176,6 +178,8 @@ FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'mojroot'@'%';
 ```
 
+
+**DA BI PRISTUPILI MARIADB IZVAN VBOX-A**
 ```
 algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ pwd
 
