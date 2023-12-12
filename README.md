@@ -179,6 +179,25 @@ SHOW GRANTS FOR 'mojroot'@'%';
 ```
 
 
+**DODAVANJE ROOT SA GRANT OPTION**
+
+MariaDB [(none)]>```CREATE USER 'root'@'%' IDENTIFIED BY '123';```
+
+Query OK, 0 rows affected (0.014 sec)
+
+
+MariaDB [(none)]>``` GRANT ALL ON *.* TO 'root'@'%';```
+
+Query OK, 0 rows affected (0.020 sec)
+
+
+
+MariaDB [(none)]>``` FLUSH PRIVILEGES;```
+
+Query OK, 0 rows affected (0.001 sec)
+
+
+
 **DA BI PRISTUPILI MARIADB IZVAN VBOX-A**
 ```
 algebra@ubuntu22:/etc/mysql/mariadb.conf.d$ pwd
